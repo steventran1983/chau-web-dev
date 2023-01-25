@@ -1,0 +1,404 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+/* Add fonts from the app's server 
+    @font-face {                
+      font-family: 'FontName';
+      src: url('FontName.woff2') format('woff2');
+    } 
+    ...or hosted services like Google Fonts 
+    @import url(//fonts.googleapis.com/css?family=Font+Name);
+  */
+
+/* @import 'node_modules/modern-normalize/modern-normalize.css'; */
+/* npm install modern-normalize
+          Resets elements for browser consistency.  
+          https://www.npmjs.com/package/modern-normalize
+        */
+
+/* Component-specific stylesheets, if any. 
+    @import "component1.css";   
+  */
+
+/*   ----- Variables  -----  */
+:root {
+    --custom-color-read: #ca1a05, 
+    /* --custom-color-orange: #FA8072, 
+    --custom-color-blue: #40e0d085, 
+    --custom-color-green: #f5eabc, 
+    --custom-color-purple: #faa2ca,  */
+    
+    /* #f75846, #FA8072, #40e0d085, #f5eabc, #faa2ca,#E9F4FF, #FFC6C6, #BDFFFD, #3B75A9; */
+    --custom-embellishment-name: ;
+}
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {
+    /* Can alternatively define in html {} or :root {} */
+    
+    /* border:5px solid #f5eabc; */
+    background-image: url(../a3-buicha/images/vitruvian-park.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--custom-color-name) ;
+    font-family: sans-serif;
+    /* Define with at least one font name and its related generic family name.*/
+    margin:0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*  ----- Page layout blocks -----  */
+header {
+    color:#3B75A9;
+    /* background-color: #f75846; */
+    /* background-color:#f5eabc; */
+    margin-top: 0;
+    /* height: 16px; */
+    
+    /* margin: 100px; */
+    /* padding: 50px;
+    border: 20px; */
+}
+
+.header{
+    background-color:#0275d8;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    /* padding: 0.5rem; */
+}
+
+main {
+    /* color:grey; */
+    /* background-color:#f75846; */
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  
+
+    
+}
+
+section {
+    background-color:grey;
+    padding: 1rem;
+    width: 90%;
+}
+
+article {
+    margin-top:1rem
+}
+
+#topic1 {}
+
+#topic2 {}
+
+div {}
+
+aside {}
+
+
+
+
+.student-name{
+    font-size: 1.5rem;
+    color:#f0ad4e;
+    font-weight: bold;
+    margin-left: 1.5rem;
+    border: 2px solid black;
+    padding:0.5rem 1rem
+}
+
+nav {
+    padding: 1rem;
+    
+    
+    /* border:50px;
+    padding:20px;
+    margin: 10px; */
+  
+}
+
+.nav-button{
+    color: white;
+    border: 2px solid black;
+    text-align: center;
+    padding-top:0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+    background-color: #f0ad4e;
+
+}
+
+
+footer {
+    margin-top: auto;
+    background-color: #0275d8 ;
+    padding: 1rem;
+    text-align: center;
+    /* color:#3B75A9;
+    background-color:#FFC6C6;
+    width: 500px;
+    margin: auto;
+    padding: 50px;
+    border: 10px; */
+}
+
+nav a {
+    /* background-color: #BDFFFD;
+    border:2px solid #f75846;
+    padding: 20px;
+    margin: 10px; */
+    
+    
+    
+}
+
+/* nav a:hover {
+    background-color:#f75846;
+    padding: 20px;
+    margin: 10px:
+} */
+
+
+/* ----- Anchors ----- Text links */
+a {
+    text-decoration: none;
+}
+
+a:link {}
+
+a:hover {}
+
+a:active {}
+
+a:visited {}
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+
+
+/*  -----  Typography  ----- */
+p {}
+
+br {}
+
+ol,
+ul,
+dl {}
+
+li {}
+
+dt {}
+
+dd {}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    
+   margin: 0; 
+}
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+abbr {}
+
+acronym {}
+
+address {}
+
+blockquote {}
+
+q {}
+
+cite {}
+
+em {}
+
+hr {}
+
+mark {}
+
+s {}
+
+span {}
+
+strong {}
+
+sub {}
+
+sup {}
+
+time {}
+
+/*  ----- Coding or instructional typography ----- */
+pre {}
+
+code {}
+
+kbd {}
+
+samp {}
+
+var {}
+
+del {}
+
+ins {}
+
+/*  ----- Table ----- */
+table {}
+
+caption {}
+
+thead {}
+
+tbody {}
+
+tfoot {}
+
+tr {}
+
+tr:nth-child(even) {}
+
+th {}
+
+td {}
+
+td:nth-child(1) {}
+
+colgroup {}
+
+data {}
+
+datalist {}
+
+
+/*  ----- Form ----- */
+form {}
+
+fieldset {}
+
+legend {}
+
+label {}
+
+button {}
+
+input {}
+
+output {}
+
+meter {}
+
+progress {}
+
+select {}
+
+optgroup {}
+
+option {}
+
+textarea {}
+
+/* ----- Media ----- */
+figure {
+    
+}
+
+figcaption {
+    
+}
+
+figure img {}
+
+svg {}
+
+picture {}
+
+source {}
+
+iframe {}
+
+video {}
+
+audio {}
+
+embed {}
+
+object {}
+
+/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+.gallery {
+    
+    display: flex;
+    color: #E9F4FF;
+}
+
+.floatright {}
+
+.floatleft {}
+
+.center-middle {}
+
+.ten {}
+
+.twenty {}
+
+.thirty {}
+
+.forty {}
+
+.fifty {}
+
+.sixty {}
+
+.seventy {}
+
+.eighty {}
+
+.radius {}
+
+.circle {}
+
+.boxshadow {}
+
+.tshadow {}
+
+.gradient {}
+
+.shape {}
+
+@keyframes App-logo {}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {}
